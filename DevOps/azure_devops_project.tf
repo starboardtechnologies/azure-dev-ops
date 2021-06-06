@@ -8,6 +8,6 @@ terraform {
 }
 
 resource "azuredevops_project" "azure-devops-project" {
-  name               = "azure-devops-project"
+  name               = var.azure_devops_project_name
   description        = var.azure_devops_project_description
 }
