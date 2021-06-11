@@ -6,12 +6,12 @@
 
 variable "devops_resource_group_names" {
     type    = list
-    default = ["dev-resource-group", "stage-resource-group", "prod-resource-group"]
+    default = ["<INSERT DEV RESOURCE GROUP NAME>", "<INSERT STAGE RESOURCE GROUP NAME>", "<INSERT PROD RESOURCE GROUP NAME>"]
 }
 
 variable "devops_resource_group_location" {
     type    = string
-    default = <INSERT RESOURCE GROUP LOCATION>
+    default = <"INSERT RESOURCE GROUP LOCATION">
 }
 
 ##################################################################################################
@@ -25,17 +25,17 @@ variable "devops_resource_storage_account_names" {
 
 variable "devops_storage_account_location" {
     type    = string
-    default = <INSERT STORAGE ACCOUNTS LOCATION>
+    default = <"INSERT STORAGE ACCOUNTS LOCATION">
 }
 
 variable "devops_storage_account_account_tier" {
     type    = string
-    default = <INSERT STORAGE ACCOUNT TIER>
+    default = <"INSERT STORAGE ACCOUNT TIER">
 }
 
 variable "devops_storage_account_account_replication_type" {
     type    = string
-    default = <INSERT STORAGE ACCOUNT REPLICATION TYPE>
+    default = <"INSERT STORAGE ACCOUNT REPLICATION TYPE">
 }
 
 ##################################################################################################
@@ -49,7 +49,7 @@ variable "devops_azure_virtual_network_names" {
 
 variable "devops_azure_virtual_network_location" {
     type    = string
-    default = <INSERT VIRTUAL NETWORK LOCATION>
+    default = <"INSERT VIRTUAL NETWORK LOCATION">
 }
 
 ##################################################################################################
