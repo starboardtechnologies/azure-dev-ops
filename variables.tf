@@ -4,7 +4,7 @@
 
 variable "devops_resource_group_names" {
     type    = list
-    default = ["<INSERT DEV RESOURCE GROUP NAME>", "<INSERT STAGE RESOURCE GROUP NAME>", "<INSERT PROD RESOURCE GROUP NAME>"]
+    default = [<"INSERT DEV RESOURCE GROUP NAME">, <"INSERT STAGE RESOURCE GROUP NAME">, <"INSERT PROD RESOURCE GROUP NAME">]
 }
 
 variable "devops_resource_group_location" {
@@ -18,7 +18,7 @@ variable "devops_resource_group_location" {
 
 variable "devops_resource_storage_account_names" {
     type    = list
-    default = ["<INSERT DEV STORAGE ACCOUNT NAME>", "<INSERT STAGE STORAGE ACCOUNT NAME>", "<INSERT PROD STORAGE ACCOUNT NAME>"]
+    default = [<"INSERT DEV STORAGE ACCOUNT NAME">, <"INSERT STAGE STORAGE ACCOUNT NAME">, <"INSERT PROD STORAGE ACCOUNT NAME">]
 }
 
 variable "devops_storage_account_location" {
@@ -42,7 +42,7 @@ variable "devops_storage_account_account_replication_type" {
 
 variable "devops_azure_virtual_network_names" {
     type    = list
-    default = ["<INSERT DEV VIRTUAL NETWORK NAME>", "<INSERT STAGE VIRTUAL NETWORK NAME>", "<INSERT PROD VIRTUAL NETWORK NAME>"] 
+    default = [<"INSERT DEV VIRTUAL NETWORK NAME">, <"INSERT STAGE VIRTUAL NETWORK NAME">, <"INSERT PROD VIRTUAL NETWORK NAME">] 
 }
 
 variable "devops_azure_virtual_network_location" {
