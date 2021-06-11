@@ -7,9 +7,9 @@ variable "devops_resource_group_names" {
     default = [<"INSERT DEV RESOURCE GROUP NAME">, <"INSERT STAGE RESOURCE GROUP NAME">, <"INSERT PROD RESOURCE GROUP NAME">]
 }
 
-variable "devops_resource_group_location" {
+variable "devops_resource_group_locations" {
     type    = string
-    default = <"INSERT RESOURCE GROUP LOCATION">
+    default = <"INSERT RESOURCE GROUP LOCATIONS">
 }
 
 ##################################################################################################
