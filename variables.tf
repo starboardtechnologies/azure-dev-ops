@@ -39,3 +39,17 @@ variable "devops_storage_account_account_replication_type" {
 }
 
 ##################################################################################################
+
+#AZURE VIRTUAL NETWORKS
+
+variable "devops_azure_virtual_network_names" {
+    type    = list
+    default = ["dev-virtual-network", "stage-virtual-network", "prod-virtual-network"] 
+}
+
+variable "devops_azure_virtual_network_location" {
+    type = string
+    default = "Central US"
+}
+
+##################################################################################################
