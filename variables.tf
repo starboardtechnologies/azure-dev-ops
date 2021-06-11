@@ -44,7 +44,7 @@ variable "devops_storage_account_account_replication_type" {
 
 variable "devops_azure_virtual_network_names" {
     type    = list
-    default = ["dev-virtual-network", "stage-virtual-network", "prod-virtual-network"] 
+    default = ["<INSERT DEV VIRTUAL NETWORK NAME>", "<INSERT STAGE VIRTUAL NETWORK NAME>", "<INSERT PROD VIRTUAL NETWORK NAME>"] 
 }
 
 variable "devops_azure_virtual_network_location" {
