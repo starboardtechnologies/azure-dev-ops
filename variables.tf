@@ -50,4 +50,9 @@ variable "devops_azure_virtual_network_location" {
     default = <"INSERT VIRTUAL NETWORK LOCATION">
 }
 
+variable "azurerm_network_ddos_protection_plans" {
+    type    = list
+    default = ["dev-virtual-netowrk-ddos-protection-plan", "stage-virtual-netowrk-ddos-protection-plan", "prod-virtual-netowrk-ddos-protection-plan"]
+}
+
 ##################################################################################################
