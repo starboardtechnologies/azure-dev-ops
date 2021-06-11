@@ -49,7 +49,7 @@ variable "devops_azure_virtual_network_names" {
 
 variable "devops_azure_virtual_network_location" {
     type    = string
-    default = "Central US"
+    default = <INSERT VIRTUAL NETWORK LOCATION>
 }
 
 ##################################################################################################
