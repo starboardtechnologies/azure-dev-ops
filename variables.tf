@@ -1,5 +1,19 @@
 ##################################################################################################
 
+#AZURE DATA LAKE
+
+variable "devops_azure_data_lake_store_names" {
+    type = list
+    default = ["azuredevdatalake", "azurestagedatalake", "azureproddatalake",]
+}
+
+variable "devops_data_lake_location" {
+  type    = list
+  default = ["centralus", "westeurope", "eastus2"]
+}
+
+##################################################################################################
+
 #AZURE RESOURCE GROUPS
 
 variable "devops_resource_group_names" {
