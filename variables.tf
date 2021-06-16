@@ -1,5 +1,19 @@
 ##################################################################################################
 
+#AZURE CONTENT DELIVERY NETWORK
+
+variable "devops_cdn_profile_name" {
+  type    = list
+  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile",]
+}
+
+variable "devops_cdn_profile_tags" {
+  type    = list
+  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile"]
+}
+
+##################################################################################################
+
 #AZURE DATA LAKE
 
 variable "devops_azure_data_lake_store_names" {
