@@ -83,4 +83,9 @@ variable "azurerm_network_ddos_protection_plans" {
     default = ["dev-virtual-netowrk-ddos-protection-plan", "stage-virtual-netowrk-ddos-protection-plan", "prod-virtual-netowrk-ddos-protection-plan"]
 }
 
+variable "devops_azurerm_public_ip_names" {
+    type = list
+    default = ["dev-public-ip-name", "stage-public-ip-name", "prod-public-ip-name",]
+}
+
 ##################################################################################################
