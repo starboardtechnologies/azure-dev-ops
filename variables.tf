@@ -1,19 +1,5 @@
 ##################################################################################################
 
-#AZURE CONTENT DELIVERY NETWORK
-
-variable "devops_cdn_profile_name" {
-  type    = list
-  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile",]
-}
-
-variable "devops_cdn_profile_tags" {
-  type    = list
-  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile"]
-}
-
-##################################################################################################
-
 #AZURE CONTAINER REGISTRIES
 
 
@@ -25,6 +11,20 @@ variable "devops_azurerm_container_registry_names" {
 variable "devops_azurerm_container_registry_georeplication_locations" {
     type = list
     default = ["<INSERT_DEV_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>", "<INSERT_STAGE_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>", "<INSERT_PROD_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>"]
+}
+
+##################################################################################################
+
+#AZURE CONTENT DELIVERY NETWORK
+
+variable "devops_cdn_profile_name" {
+  type    = list
+  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile",]
+}
+
+variable "devops_cdn_profile_tags" {
+  type    = list
+  default = ["devcdnprofile", "stagecdnprofile", "prodcdnprofile"]
 }
 
 ##################################################################################################
