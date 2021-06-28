@@ -43,6 +43,26 @@ variable "devops_data_lake_location" {
 
 ##################################################################################################
 
+#AZURE KUBERNETES SERVICE
+
+variable "devops_azure_kubernetes_cluster_names" {
+    type = list
+    default = ["<INSERT_DEV_KUBERNETES_CLUSTER_NAME>","<STAGE_DEV_KUBERNETES_CLUSTER_NAME>","<INSERT_PROD_KUBERNETES_CLUSTER_NAME>"]
+}
+
+variable "devops_azure_kubernetes_cluster_tags" {
+    type = list
+    default = ["devazurekubernetescluster","stageazurekubernetescluster","prodazurekubernetescluster"]
+}
+
+variable "devops_azure_kubernetes_clusters_dns_prefixes" {
+    type = list
+    default = ["devaks", "stageaks", "prodaks"]
+}
+
+
+##################################################################################################
+
 #AZURE RESOURCE GROUPS
 
 variable "devops_resource_group_names" {
