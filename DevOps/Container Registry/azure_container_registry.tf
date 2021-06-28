@@ -1,4 +1,4 @@
-resource "azurerm_container_registry" "acr" {
+resource "azurerm_container_registry" "devops_azure_container_registries" {
   count                    = 3  
   name                     = var.devops_azurerm_container_registry_names[count.index]
   resource_group_name      = var.devops_resource_group_names[count.index]
