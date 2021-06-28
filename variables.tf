@@ -14,6 +14,23 @@ variable "devops_cdn_profile_tags" {
 
 ##################################################################################################
 
+#AZURE CONTAINER REGISTRIES
+
+
+variable "devops_azurerm_container_registry_names" {
+    type = list
+    default = ["<INSERT_DEV_CONTAINER_REGISTRY_NAME>", "<INSERT_STAGE_CONTAINER_REGISTRY_NAME>", "<INSERT_PROD_CONTAINER_REGISTRY_NAME>"]
+}
+
+variable "devops_azurerm_container_registry_georeplication_locations" {
+    type = list
+    default = ["<INSERT_DEV_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>", "<INSERT_STAGE_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>", "<INSERT_PROD_CONTAINER_REGISTRY_GEOREPLICATION_LOCATION>"]
+}
+
+##################################################################################################
+
+
+
 #AZURE DATA LAKE
 
 variable "devops_azure_data_lake_store_names" {
