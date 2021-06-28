@@ -29,8 +29,6 @@ variable "devops_azurerm_container_registry_georeplication_locations" {
 
 ##################################################################################################
 
-
-
 #AZURE DATA LAKE
 
 variable "devops_azure_data_lake_store_names" {
