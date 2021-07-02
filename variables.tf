@@ -43,6 +43,20 @@ variable "devops_data_lake_location" {
 
 ##################################################################################################
 
+#AZURE DATABRICKS
+
+variable "devops_azure_databricks_workspace_name" {
+    type    = list
+    default = ["<INSERT_DEV_AZURE_DATABRICKS_WORKSPACE_NAME>", "<INSERT_STAGE_AZURE_DATABRICKS_WORKSPACE_NAME>", "<INSERT_PROD_AZURE_DATABRICKS_WORKSPACE_NAME>"]
+}
+
+variable "devops_azure_databricks_workspace_name_tags" {
+    type    = list
+    default = ["dev-databricks-workspace", "stage-databricks-workspace", "prod-databricks-workspace"]
+}
+
+##################################################################################################
+
 #AZURE KUBERNETES SERVICE
 
 variable "devops_azure_kubernetes_cluster_names" {
