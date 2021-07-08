@@ -129,6 +129,17 @@ variable "devops_azure_storage_blob_source" {
     default = [".zip", ".zip", ".zip"]
 }
 
+variable "devops_azure_storage_container_names" {
+    type = list
+    default = ["dev-storage-container", "stage-storage-container", "prod-storage-container"]
+}
+
+#"blob", "container", or "private"
+variable "devops_azure_storage_container_access_type" {
+    type = list
+    default = ["private", "private", "private"]
+}
+
 ##################################################################################################
 
 #AZURE VIRTUAL NETWORKS
