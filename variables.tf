@@ -113,6 +113,22 @@ variable "devops_storage_account_account_replication_type" {
     default = <"INSERT STORAGE ACCOUNT REPLICATION TYPE">
 }
 
+variable "devops_azure_storage_blob_names" {
+    type = list
+    default = ["dev-azure-storage-blob", "stage-azure-storage-blob", "prod-azure-storage-blob"]
+}
+
+#block, append, page
+variable "devops_azure_storage_blob_type" {
+    type = list
+    default = ["Block", "Block", "Block"]
+}
+
+variable "devops_azure_storage_blob_source" {
+    type = list
+    default = [".zip", ".zip", ".zip"]
+}
+
 ##################################################################################################
 
 #AZURE VIRTUAL NETWORKS
